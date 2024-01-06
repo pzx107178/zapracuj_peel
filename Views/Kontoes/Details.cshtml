@@ -1,0 +1,66 @@
+﻿@model mapkowanie.Models.Konto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Konto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Zablokowane)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Zablokowane)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RodzajKonta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RodzajKonta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WynagrodzenieMinimalne)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WynagrodzenieMinimalne)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GodzinaStart)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GodzinaStart)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GodzinaStop)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GodzinaStop)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Adres)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Adres)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nip)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nip)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

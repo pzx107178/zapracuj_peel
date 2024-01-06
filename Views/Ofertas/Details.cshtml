@@ -1,0 +1,54 @@
+﻿@model mapkowanie.Models.Oferta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Oferta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WynagrodzenieMin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WynagrodzenieMin)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WynagrodzenieMax)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WynagrodzenieMax)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PracaStart)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PracaStart)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PracaStop)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PracaStop)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.widocznosc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.widocznosc)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

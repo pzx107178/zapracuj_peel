@@ -1,0 +1,217 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = mapkowanie
+build_property.RootNamespace = mapkowanie
+build_property.ProjectDir = C:\Users\balfouri\Source\Repos\pzx107178\zapracuj_peel\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\balfouri\Source\Repos\pzx107178\zapracuj_peel
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Branzas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbnphc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Branzas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbnphc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Branzas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbnphc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Branzas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbnphc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Branzas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbnphc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Excercices/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Excercices/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Excercices/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Excercices/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Excercices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Excercices/Staty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlc1xTdGF0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/ExcerciceTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlVHlwZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/ExcerciceTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlVHlwZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/ExcerciceTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlVHlwZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/ExcerciceTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlVHlwZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/ExcerciceTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXJjaWNlVHlwZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Kontoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Kontoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Kontoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Kontoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Kontoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Ofertas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Ofertas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Ofertas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Ofertas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Ofertas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Rodzajes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9kemFqZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Rodzajes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9kemFqZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Rodzajes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9kemFqZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Rodzajes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9kemFqZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Rodzajes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9kemFqZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Sessions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc2lvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Sessions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc2lvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Sessions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc2lvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Sessions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc2lvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Sessions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc2lvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Statistics/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Statistics/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Statistics/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Statistics/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Statistics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/balfouri/Source/Repos/pzx107178/zapracuj_peel/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bqz87j1nz4

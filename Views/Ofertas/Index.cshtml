@@ -1,0 +1,66 @@
+﻿@model IEnumerable<mapkowanie.Models.Oferta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Opis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WynagrodzenieMin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WynagrodzenieMax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PracaStart)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PracaStop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.widocznosc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Opis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WynagrodzenieMin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WynagrodzenieMax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PracaStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PracaStop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.widocznosc)
+            </td>
+            <td>
+                <!--<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>-->
+                <a href="https://www.blackpeoplemeet.com/">Zaaplikuj</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

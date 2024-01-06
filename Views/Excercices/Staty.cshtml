@@ -1,0 +1,58 @@
+﻿@model mapkowanie.Models.Excercice
+
+@{
+    ViewData["Title"] = "Statystyki";
+}
+
+<!--
+Ponadto każdy użytkownik ma dostęp do swoich statystyk, które przy każdym rodzaju ćwiczenia podają liczbę sesji treningowych w ostatnich czterech tygodniach, gdy użytkownik wykonywał dane ćwiczenie
+oraz najlepszy wynik(najlepszy to taki, gdy ciężar przemnożony przez łączną liczbę powtórzeń jest największy).
+-->
+
+<style>
+    tr:hover {
+        font-weight: bold;
+        background-color: lightgoldenrodyellow;
+    }
+
+    td {
+        width: 30vw;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        font-weight: inherit;
+    }
+
+    td:first-child {
+        font-weight: bold;
+    }
+</style>
+
+<h1>Twoje osobiste statystyki!</h1>
+
+<br/>
+
+<strong><big>Twój najlepszy wynik: @Html.DisplayFor(model => model.NajlepszyWynik) kilogramów!</big></strong>
+
+<hr />
+
+Szegóły dotyczącego tego treningu:
+
+<table>
+    <tr>
+        <td>Rodzaj ćwiczenia</td>
+        <td>@Html.DisplayFor(model => model.ExcerciceType.Name)</td>
+    </tr>
+    <tr>
+        <td>Ciężar</td>
+        <td>@Html.DisplayFor(model => model.Weight)</td>
+    </tr>
+    <tr>
+        <td>Powtórzenia</td>
+        <td>@Html.DisplayFor(model => model.Reps)</td>
+    </tr>
+    <tr>
+        <td>Serie</td>
+        <td>@Html.DisplayFor(model => model.Series)</td>
+    </tr>
+</table>
