@@ -2,7 +2,223 @@
     ViewData["Title"] = "Home Page";
 }
 
+<head>
+    <style>
+        /*
+
+                        #DCF2F1
+                        #7FC7D9
+                        #365486
+                        #0F1035
+
+                        #FFB81C; zolty, ostroznie!!
+                */
+
+        body {
+            background-color: #DCF2F1;
+            margin: 0;
+            color: #0F1035;
+        }
+
+        .peel {
+            transition: all 0.3s ease;
+        }
+
+        .display-4:hover .peel {
+            color: #FFB81C;
+        }
+        .nazwa {
+        font-weight: bold;
+        }
+
+        #invis {
+            width: 100%;
+            height: 1vh;
+        }
+
+        #image {
+            width: 35%;
+            height: 44vh;
+            float: left;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 1%;
+        }
+
+        #image > img {
+            width: 100%;
+                vertical-align: middle;
+                max-width: 100%;
+                max-height: 100%;
+                -webkit-box-shadow: 4px 4px 24px 0px rgba(15, 16, 53, 1);
+                -moz-box-shadow: 4px 4px 24px 0px rgba(15, 16, 53, 1);
+                box-shadow: 4px 4px 24px 0px rgba(15, 16, 53, 1);
+        }
+
+        #opis {
+            width: 63%;
+            height: 50vh;
+            background-color:#7FC7D9;
+            box-sizing: border-box;
+            float: right;
+            text-align: left;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            box-sizing: border-box;
+            padding: 10px;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        #spod {
+            width: 100%;
+            height: 20vh;
+            background-color: #7FC7D9;
+            clear: both;
+
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            box-sizing: border-box;
+            transition: all 0.5s ease;
+            overflow: hidden;
+            -webkit-box-shadow: 4px 4px 24px 0px rgba(15, 16, 53, 1);
+            -moz-box-shadow: 4px 4px 24px 0px rgba(15, 16, 53, 1);
+            box-shadow: 4px 4px 24px 0px rgba(15, 16, 53, 1);
+            z-index: 20;       }
+
+        #rolka {
+            width: 300%;
+            transition: all 2s ease-in-out;
+        }
+       
+        .pytanie {
+            width: 33.33333%;
+            height: 5vh;
+            float: left;
+            text-align: left;
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 150%;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .odpowiedz {
+            width: 33.3333%;
+            height: 15vh;
+            float: left;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            padding: 5px;
+            text-align: left;
+        }
+
+        ol {
+            list-style-type:circle;
+        }
+
+    </style>
+</head>
+
+
+
+
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Witaj na stronie <span class="nazwa">zapracuj_<span class="peel">peel</span></span>!</h1>
+
+    <div id="invis"></div>
+
+    <div id="image">
+        <img src="teamwork.jpg" />
+    </div>
+
+
+    <div id="opis">
+        <h3>Witaj na naszej platformie dedykowanej zatrudnieniu!</h3><br />Cieszymy się, że dołączyłeś do naszej społeczności, gdzie Twoja kariera może rozkwitać. Nasza strona oferuje nie tylko możliwość zakładania konta w łatwy i intuicyjny sposób, ale także umożliwia przeglądanie atrakcyjnych ofert pracy dostosowanych do Twoich umiejętności i preferencji.<br /><br />
+
+        Zapewniamy Ci, że proces tworzenia ofert pracy i składania aplikacji jest szybki i efektywny. Nasza platforma została zaprojektowana z myślą o ułatwieniu Ci znalezienia idealnego zatrudnienia. Niezależnie od tego, czy jesteś doświadczonym profesjonalistą czy świeżo upieczonym absolwentem, mamy oferty dostosowane do różnych poziomów doświadczenia i branż.<br />
+
+        Dodatkowo, nasz system pozwoli Ci być na bieżąco z najnowszymi ofertami pracy, które mogą spełnić Twoje oczekiwania. Wierzymy, że nasza społeczność jest miejscem, gdzie Twoje umiejętności są cenione, a Ty masz szansę rozwijać się zawodowo.<br />
+    </div>
+
+    <div id="spod">
+
+        <div id="rolka">
+
+            
+            <div class="pytanie">Nasze usługi</div><div class="pytanie">Jak zacząć?</div>
+            <div class="pytanie">Dlaczego my?</div>
+
+
+            
+
+            <div class="odpowiedz">
+                Nasi doświadczeni specjaliści ds. zasobów ludzkich pracują nad tworzeniem atrakcyjnych ofert pracy, które przyciągną uwagę najlepszych kandydatów.
+                Pomagamy w stworzeniu profesjonalnego CV i listu motywacyjnego, które wyróżnią Cię spośród konkurencji i zwiększą Twoje szanse na sukces.
+                Oferujemy szereg szkoleń i programów rozwoju zawodowego, abyś mógł stale podnosić swoje kwalifikacje i rozwijać się w karierze. Wystarczy się z nami skontaktować za pomocą
+                formularza kontaktowego sprytnie ukrytego na naszej stronie.
+            </div>
+
+            <div class="odpowiedz">
+                <ol>
+                    <li>Zarejestruj się na naszej platformie - Wypełnij prosty formularz rejestracyjny, aby zacząć korzystać z naszych usług.</li>
+                    <li>Uzupełnij swój profil zawodowy - Im więcej informacji podasz, tym lepiej będziemy w stanie dostosować oferty do Twoich potrzeb.</li>
+                    <li>Przeglądaj oferty pracy - Nasza intuicyjna platforma umożliwia łatwe przeglądanie ofert pracy dostosowanych do Twojego profilu.</li>
+                    <li>Aplikuj z łatwością - Aplikowanie na oferty pracy jest szybkie i proste. Wsparcie naszych ekspertów jest zawsze dostępne, gdybyś potrzebował dodatkowej pomocy.</li>
+                </ol>
+
+            </div>
+
+
+            <div class="odpowiedz">
+
+                <ul>
+                    <li>Rozumiemy, że każda osoba jest inna, dlatego nasze oferty pracy są dostosowane do Twoich umiejętności, doświadczenia i aspiracji. Nie dostajesz masowej oferty, lecz w pierwszej kolejności propozycję dopasowaną specjalnie dla Ciebie.</li>
+                    <li>Współpracujemy z szerokim spektrum renomowanych firm z różnych branż. To oznacza, że masz dostęp do różnorodnych możliwości zawodowych, a my dbamy o to, abyś trafił do środowiska pracy, które najlepiej odpowiada Twoim oczekiwaniom.</li>
+                </ul>
+                
+
+             
+                
+            </div>
+            
+
+        </div>
+        
+
+    </div>
 </div>
+
+<script>
+    
+    var sleepSetTimeout_ctrl;
+
+    function sleep(ms) {
+        clearInterval(sleepSetTimeout_ctrl);
+        return new Promise(resolve => sleepSetTimeout_ctrl = setTimeout(resolve, ms));
+    }
+    
+    async function przesuwanieRolki() {
+        rolka = document.getElementById("rolka").style;
+        var interval = 4000;
+
+        while (true) { 
+            await sleep(interval);
+            rolka.marginLeft = "-100%";
+            await sleep(interval);
+            rolka.marginLeft = "-200%";
+            await sleep(interval);
+            rolka.marginLeft = "0%";
+        }
+
+        
+    }
+
+    przesuwanieRolki();
+</script>

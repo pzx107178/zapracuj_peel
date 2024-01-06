@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D92dUYqXimBSierxNY9ZkCh7GlfKiLU+2xXZkEozPEA=",
+  "Hash": "tLnnFB21ZLG6eeBq9Sjm0ay8YQyUH4WQcxyuag9C2CE=",
   "Source": "mapkowanie",
   "BasePath": "_content/mapkowanie",
   "Mode": "Default",
@@ -2089,6 +2089,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\wwwroot\\man.jpg",
+      "SourceId": "mapkowanie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\wwwroot\\",
+      "BasePath": "_content/mapkowanie",
+      "RelativePath": "man.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\man.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\wwwroot\\teamwork.jpg",
+      "SourceId": "mapkowanie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\wwwroot\\",
+      "BasePath": "_content/mapkowanie",
+      "RelativePath": "teamwork.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\teamwork.jpg"
     }
   ]
 }

@@ -245,6 +245,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\wwwroot\\man.jpg",
+      "PackagePath": "staticwebassets\\man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\wwwroot\\teamwork.jpg",
+      "PackagePath": "staticwebassets\\teamwork.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.mapkowanie.props",
       "PackagePath": "build\\mapkowanie.props"
     },
