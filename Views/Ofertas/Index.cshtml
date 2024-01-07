@@ -144,391 +144,44 @@
 
 	<div class="kategorie">Proponowane oferty</div>
 
-	<div class="oferta">
-		<div class="opis">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
-		<div class="godziny">16:00 - 20:00</div>
-		<div class="zarobki">30000 - 35000</div>
-		<a href="mailto:pzx107178@student.poznan.merito.pl"><div class="aplikuj">Aplikuj!</div></a>
-	</div>
+	@foreach (var item in Model)
+	{
+		if (item.widocznosc && item.WynagrodzenieMin > 200)
+		{
+			string GStart = item.PracaStart.ToString("HH:mm");
+			string GStop = item.PracaStop.ToString("HH:mm");
+
+			<div class="oferta">
+				<div class="opis">@Html.DisplayFor(modelItem => item.Opis)</div>
+				<div class="godziny">@GStart - @GStop</div>
+				<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin) - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)</div>
+				<a href="mailto:pzx107178@student.poznan.merito.pl"><div class="aplikuj">Aplikuj!</div></a>
+			</div>
+		}
+		//<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+	}
 
 
-	<div class="oferta">
-		<div class="opis">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
-		<div class="godziny">16:00 - 20:00</div>
-		<div class="zarobki">30000 - 35000</div>
-		<a href="mailto:pzx107178@student.poznan.merito.pl"><div class="aplikuj">Aplikuj!</div></a>
-	</div>
 
 
 
 	<div class="kategorie">Wszystkie oferty</div>
-
-
 	@foreach (var item in Model)
 	{
-		Console.WriteLine(Html.DisplayFor(modelItem => item.widocznosc));
-		string GStart = item.PracaStart.ToString("HH:mm");
-		string GStop = item.PracaStop.ToString("HH:mm");
+		if (item.widocznosc)
+		{
+			string GStart = item.PracaStart.ToString("HH:mm");
+			string GStop = item.PracaStop.ToString("HH:mm");
 
-		<div class="oferta">
-			<div class="opis">@Html.DisplayFor(modelItem => item.Opis)</div>
-			<div class="godziny">@GStart - @GStop</div>
-			<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin) - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)</div>
-			<a href="mailto:pzx107178@student.poznan.merito.pl"><div class="aplikuj">Aplikuj!</div></a>
-		</div>
+			<div class="oferta">
+				<div class="opis">@Html.DisplayFor(modelItem => item.Opis)</div>
+				<div class="godziny">@GStart - @GStop</div>
+				<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin) - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)</div>
+				<a href="mailto:pzx107178@student.poznan.merito.pl"><div class="aplikuj">Aplikuj!</div></a>
+			</div>
+		}
+		//<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
 	}
+
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<style>
-	/*
-
-									#DCF2F1
-									#7FC7D9
-									#365486
-									#0F1035
-
-									#FFB81C; zolty, ostroznie!!
-							*/
-
-
-
-	* {
-		box-sizing: border-box;
-	}
-
-
-
-	body {
-		font-family: Arial, sans-serif;
-		background-color: #DCF2F1;
-		color: #DCF2F1;
-		margin: 0;
-		padding: 0;
-	}
-
-	.header {
-		background-color: #0056b3;
-		color: #DCF2F1;
-		text-align: center;
-		padding: 20px 0;
-	}
-
-	.horizontal-menu {
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
-		text-align: center;
-	}
-
-		.horizontal-menu li {
-			display: inline;
-			margin-right: 20px;
-		}
-
-			.horizontal-menu li a {
-				color: #DCF2F1;
-				text-decoration: none;
-				padding: 10px 15px;
-				display: inline;
-			}
-
-				.horizontal-menu li a:hover {
-					background-color: #0056b3;
-				}
-
-	.container {
-		background-color: #DCF2F1;
-		color: #0F1035;
-		width: 80%;
-		box-shadow: 0 4px 8px 0 #0F1035;
-		margin-top: 20px;
-	}
-
-		.container::after {
-			content: '';
-			clear: both;
-			display: block;
-		}
-
-	label, input, select, button {
-		display: block;
-		width: 100%;
-		margin-top: 10px;
-	}
-
-	input, select, button {
-		padding: 10px;
-	}
-
-	input, textarea, button {
-		width: 100%;
-		padding: 10px;
-		margin-top: 10px;
-	}
-
-	button {
-		background-color: #4CAF50;
-		color: #DCF2F1;
-		border: none;
-		cursor: pointer;
-	}
-
-	.content {
-		float: right;
-		width: 100%;
-		padding: 20px;
-	}
-
-	ul {
-		list-style-type: none;
-		padding: 0;
-	}
-
-	li a {
-		text-decoration: none;
-		color: #0F1035;
-		display: block;
-		padding: 10px;
-		margin-top: 5px;
-	}
-
-		li a:hover {
-			background-color: #DCF2F1;
-		}
-
-
-	.alert {
-		padding: 20px;
-		margin-bottom: 20px;
-	}
-
-	.error {
-		background-color: #f44336;
-	}
-
-	.success {
-		background-color: #4CAF50;
-	}
-
-	.alert {
-		color: #DCF2F1;
-		border-radius: 5px;
-	}
-
-	.working-hours {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.hour {
-		flex-basis: 48%;
-	}
-
-
-
-	.offers {
-		list-style: none;
-		padding: 0;
-	}
-
-	.offer-link {
-		background-color: #DCF2F1;
-		padding: 20px;
-		margin-bottom: 20px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		box-shadow: 0 2px 4px #0F1035;
-		border-radius: 5px;
-	}
-
-	.offer-link {
-		text-decoration: none;
-		color: inherit;
-		height: 100%;
-	}
-
-	.offer-details {
-		flex-grow: 1;
-	}
-
-	.offer-salary {
-		margin-left: 20px;
-		white-space: nowrap;
-	}
-
-	.offer:hover {
-		background-color: #DCF2F1;
-	}
-
-
-	.back {
-		text-decoration: none;
-		color: #007bff;
-	}
-
-</style>
-<div class="header">
-	<h1>Dostępne ogłoszenia</h1>
-</div>
-<div class="container">
-	<div class="content">
-
-
-		<h2>Preferowane Oferty</h2>
-		<ul class="offers">
-
-
-			<li class="offer">
-				<a href="widok_oferty.html" class="offer-link">
-					<div class="offer-details">
-						<h3>Nazwa Oferty 1</h3>
-						<p>Opis Oferty 1</p>
-					</div>
-					<div class="offer-salary">
-						3000 - 5000 PLN
-					</div>
-				</a>
-			</li>
-
-
-		</ul>
-
-
-
-
-		<h2>Wszystkie Oferty</h2>
-		<ul class="offers">
-
-			<li class="offer">
-				<a href="widok_oferty.html" class="offer-link">
-					<div class="offer-details">
-						<h3>Nazwa Oferty 1</h3>
-						<p>Opis Oferty 1</p>
-					</div>
-					<div class="offer-salary">
-						3000 - 5000 PLN
-					</div>
-				</a>
-			</li>
-
-			
-		</ul>
-
-
-	</div>
-</div>-->
-
-
-
-
-
-
-
-
-
-
-
-@* <div id="ukryj to">
-<!--
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Opis)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.WynagrodzenieMin)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.WynagrodzenieMax)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PracaStart)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PracaStop)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.widocznosc)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Opis)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.WynagrodzenieMin)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.WynagrodzenieMax)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PracaStart)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PracaStop)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.widocznosc)
-            </td>
-            <td>
-                <!--<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>-->
-                <a href="https://www.blackpeoplemeet.com/">Zaaplikuj</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table> -->
-</div> *@

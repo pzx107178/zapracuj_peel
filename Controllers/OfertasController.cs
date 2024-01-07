@@ -32,7 +32,7 @@ namespace mapkowanie.Controllers
 
 
                 return _context.Oferta != null ? 
-                          View(await _context.Oferta.ToListAsync()) :
+                          View(await _context.Oferta.Include(e => e.Konto).ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Oferta'  is null.");
         }
 
