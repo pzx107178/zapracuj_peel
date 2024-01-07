@@ -208,15 +208,16 @@
     
     async function przesuwanieRolki() {
         rolka = document.getElementById("rolka").style;
-        var interval = 2000;
+        var interval = 5000;
 
         while (true) { 
-            await sleep(interval);
+            await sleep(1000);
             rolka.marginLeft = "-100%";
             await sleep(interval);
             rolka.marginLeft = "-200%";
             await sleep(interval);
             rolka.marginLeft = "0%";
+            await sleep(4000);
         }
 
         

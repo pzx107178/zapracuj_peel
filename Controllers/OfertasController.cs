@@ -36,6 +36,16 @@ namespace mapkowanie.Controllers
                           Problem("Entity set 'ApplicationDbContext.Oferta'  is null.");
         }
 
+        public async Task<IActionResult> Index2()
+        {
+            IdentityUser uzytkownik = _userManager.FindByNameAsync(User.Identity.Name).Result;
+
+
+            return _context.Oferta != null ?
+                      View(await _context.Oferta.Include(e => e.Konto).ToListAsync()) :
+                      Problem("Entity set 'ApplicationDbContext.Oferta'  is null.");
+        }
+
         // GET: Ofertas/Details/5
         public async Task<IActionResult> Details(int? id)
         {

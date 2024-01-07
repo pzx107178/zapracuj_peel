@@ -1,0 +1,152 @@
+﻿@model IEnumerable<mapkowanie.Models.Oferta>
+
+@{
+    ViewData["Title"] = "Przegladanie ofert";
+}
+
+<head>
+    
+	<style>
+		/*
+
+										#DCF2F1
+										#7FC7D9
+										#365486
+										#0F1035
+
+										#FFB81C; zolty, ostroznie!!
+		*/
+
+		body {
+			background-color: rgba(127, 199, 217, 1);
+			background-image: radial-gradient(circle, rgba(127, 199, 217, 1) 0%, rgba(220, 242, 241, 1) 100%);
+			margin: 0;
+			color: #0F1035;
+		}
+
+		#container-all {
+			width: 100%;
+			height: auto;
+			background-color: #DCF2F1;
+		}
+
+		#naglowek {
+			width: 100%;
+			height: 10vh;
+			background-color: #365486;
+			color: #DCF2F1;
+			font-size: 250%;
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 2px;
+
+		}
+
+		.kategorie {
+			width: 100%;
+			height: 5vh;
+			background-color: #365486;
+			color: #DCF2F1;
+			font-size: 150%;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			border-radius: 2px;
+			padding-left: 5px;
+
+		}
+
+		.oferta {
+			width: 100%;
+			height: 10vh;
+
+			float: left;
+			background-color: #DCF2F1;
+			border: 2px solid #0F1035 ;
+			box-sizing: border-box;
+			transition: all 0.3s ease;
+		}
+
+		.oferta a {
+			width: 10%;
+			height: inherit;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+		}
+
+
+
+		.oferta * {
+			float:left;
+		}
+
+		.opis {
+			width: 70%;
+			height: inherit;
+			overflow: scroll;
+			-ms-overflow-style: none; /* IE and Edge */
+			scrollbar-width: none; /* Firefox */
+			padding: 1px;
+			box-sizing: border-box;
+			color: #0F1035;
+		}
+
+		.opis::-webkit-scrollbar {
+			display: none;
+		}
+
+		.godziny {
+			width: 10%;
+			height: inherit;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+		}
+
+		.zarobki {
+			width: 10%;
+			height: inherit;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+		}
+
+		.aplikuj {
+			width: 90%;
+			height: 7vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.3s ease;
+			font-weight: bold;
+			font-size: 130%;
+		}
+
+
+	</style>
+</head>
+
+
+<div id="container-all">
+	<div id="naglowek">Twoje ogłoszenia</div>
+	@foreach (var item in Model)
+	{
+		string GStart = item.PracaStart.ToString("HH:mm");
+			string GStop = item.PracaStop.ToString("HH:mm");
+
+			<div class="oferta">
+				<div class="opis">@Html.DisplayFor(modelItem => item.Opis)</div>
+				<div class="godziny">@GStart - @GStop</div>
+				<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin) - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)</div>
+				<a asp-action="Edit" asp-route-id="@item.Id"><div class="aplikuj">Edytuj</div></a>
+			</div>
+
+		
+	}
+
+</div>
