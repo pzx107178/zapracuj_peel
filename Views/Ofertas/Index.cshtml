@@ -22,12 +22,16 @@
 			background-image: radial-gradient(circle, rgba(127, 199, 217, 1) 0%, rgba(220, 242, 241, 1) 100%);
 			margin: 0;
 			color: #0F1035;
+			-ms-overflow-style: none; /* IE and Edge */
+			scrollbar-width: none; /* Firefox */
 		}
+
+			body::-webkit-scrollbar {
+				display: none;
+			}
 
 		#container-all {
 			width: 100%;
-			height: auto;
-			background-color: #DCF2F1;
 		}
 
 		#naglowek {
@@ -101,6 +105,8 @@
 			display: none;
 		}
 
+		
+
 		.godziny {
 			width: 10%;
 			height: inherit;
@@ -146,7 +152,7 @@
 
 	@foreach (var item in Model)
 	{
-		if (item.widocznosc && item.WynagrodzenieMin > 200)
+		if (item.widocznosc && item.WynagrodzenieMin >= 1200)
 		{
 			string GStart = item.PracaStart.ToString("HH:mm");
 			string GStop = item.PracaStop.ToString("HH:mm");
@@ -154,7 +160,7 @@
 			<div class="oferta">
 				<div class="opis">@Html.DisplayFor(modelItem => item.Opis)</div>
 				<div class="godziny">@GStart - @GStop</div>
-				<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin) - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)</div>
+				<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin)zł - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)zł</div>
 				<a href="mailto:pzx107178@student.poznan.merito.pl"><div class="aplikuj">Aplikuj!</div></a>
 			</div>
 		}
@@ -176,7 +182,7 @@
 			<div class="oferta">
 				<div class="opis">@Html.DisplayFor(modelItem => item.Opis)</div>
 				<div class="godziny">@GStart - @GStop</div>
-				<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin) - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)</div>
+				<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin)zł - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)zł</div>
 				<a href="mailto:pzx107178@student.poznan.merito.pl"><div class="aplikuj">Aplikuj!</div></a>
 			</div>
 		}
