@@ -28,10 +28,13 @@ namespace mapkowanie.Controllers
         // GET: Kontoes
         public async Task<IActionResult> Index()
         {
-            IdentityUser uzytkownik = _userManager.FindByNameAsync(User.Identity.Name).Result;
+            IdentityUser uzytkownik = _userManager.FindByNameAsync(User.Identity.Name).Result; //adres e-mail
+
+            //Console.WriteLine(uzytkownik);
 
 
-            return View(await _context.Konto.Include(e => e.user).Where(p => p.userId == uzytkownik.Id).ToListAsync());
+            //return View(await _context.Konto.Include(e => e.user).Where(p => p.userId == uzytkownik.Id).ToListAsync());
+            return View(await _context.Konto.ToListAsync());
         }
 
         // GET: Kontoes/Details/5
