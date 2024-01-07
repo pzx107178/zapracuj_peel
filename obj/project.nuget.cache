@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OUrZlE1wO3q/QvAQdNGo0dadmhDWacviY2zgy3JZlusSRbG5Mf0LYrqRqPd8neTtXkKv2rDtWdrxyTEnjp7olg==",
+  "dgSpecHash": "Wc4muiCViT7SjStwUWGqmN72ZHuS5iKeqpUSkp7bkNx4LkuGKocF7NDZqKSwPSNeGzIvaf0PP9WTOhT95ny5ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj",
+  "projectFilePath": "C:\\Users\\balfouri\\source\\repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\balfouri\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\balfouri\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

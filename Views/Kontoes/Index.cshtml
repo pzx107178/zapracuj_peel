@@ -1,88 +1,154 @@
 ﻿@model IEnumerable<mapkowanie.Models.Konto>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Twoje konto";
 }
 
-<h1>Index</h1>
+<head>
+    <style>
+        /*
+                    #DCF2F1
+        #7FC7D9
+        #365486
+        #0F1035
 
-<p>
-    @{
-
-        if (Model.Count() > 0)
-        {
+                #FFB81C; żółty
+        */
+        body {
+            background-color: rgba(127, 199, 217, 1);
+            background-image: radial-gradient(circle, rgba(127, 199, 217, 1) 0%, rgba(220, 242, 241, 1) 100%);
+            margin: 0;
+            color: #0F1035;
         }
-        else
-        {
-            <h1><a asp-action="Create">Create New</a></h1>
+
+        #przycisk-container {
+            width: 100%;
+            height: 60vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #przycisk-container > a {
+            width: 50%;
+            height: 30vh;
+        }
+
+        #przycisk {
+            width: 100%;
+            height: 100%;
+            background-color: #7FC7D9; cursor: pointer;
+           
+            
+            transition: all 0.3s ease;
+            box-sizing: border-box;     
+            border: 4px solid #FFB81C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 200%;
+            font-weight: bold;
+           
+        }
+
+        a:link {
+            color: #0F1035; text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #0F1035;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #0F1035;
+            ;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+
+        #container {
+            width: 100%;
+            height: 70vh;
+
+            margin-left: 5%;
+        }
+
+        td {
+            border: 1vh solid #0F1035; padding: 1vh;
+            box-sizing: border-box;
+            font-size: 200%;
+            text-align: center;
+            color: #0F1035;
+            transition: all 0.3s ease;
+        }
+
+        tr:hover td {
+            background-color: #DCF2F1;
+        }
+
+        .btn-primary {
+            color: #DCF2F1 !important;
+            font-weight: bold !important;
+            width: 30% !important;
+        }
+
+
+    </style>
+</head>
+
+
+
+
+    @{
+        <h1>Twoje informacje</h1><br />
+
+    //if (Model.Count() > 0)
+    if(true)
+    {
+    
+
+        <div id="container">
+           
+
+                @foreach (var item in Model)
+                {
+                <table>
+                    <tr> <td>Oczekiwane wynagrodzenie</td><td>@Html.DisplayFor(modelItem => item.WynagrodzenieMinimalne)</td></tr>
+                    <tr><td>Start pracy</td><td>@Html.DisplayFor(modelItem => item.GodzinaStart)</td></tr>
+                    <tr><td>Koniec pracy</td><td> @Html.DisplayFor(modelItem => item.GodzinaStop)</td></tr>
+                        <br>
+                    <tr><td>Data urodzenia</td><td> @Html.DisplayFor(modelItem => item.DateTime)</td></tr>
+                    <tr><td>Adres zamieszkania</td><td> @Html.DisplayFor(modelItem => item.Adres)</td></tr>
+                    <tr> <td>Twój NIP</td><td>@Html.DisplayFor(modelItem => item.Nip)</td></tr>
+                </table>
+                <br />
+                    <a class="btn btn-primary"  asp-action="Edit" asp-route-id="@item.Id">Edytuj informacje</a>
+                }
+
+                
+
+            
+        </div>
+
+        } else {
+            <div id="przycisk-container">
+            <a asp-action="Create">
+                <div id="przycisk">
+                    <span>Kliknij tutaj aby uzupełnić informacje!</span>
+                </div>
+            </a>
+            
+            </div>
         }
 
     }
 
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.DateTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zablokowane)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RodzajKonta)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.WynagrodzenieMinimalne)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GodzinaStart)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GodzinaStop)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Adres)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nip)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Zablokowane)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RodzajKonta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.WynagrodzenieMinimalne)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GodzinaStart)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GodzinaStop)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Adres)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nip)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+
+

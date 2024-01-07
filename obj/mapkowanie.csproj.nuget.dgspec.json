@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj": {}
+    "C:\\Users\\balfouri\\source\\repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj": {
+    "C:\\Users\\balfouri\\source\\repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj",
+        "projectUniqueName": "C:\\Users\\balfouri\\source\\repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj",
         "projectName": "mapkowanie",
-        "projectPath": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj",
+        "projectPath": "C:\\Users\\balfouri\\source\\repos\\pzx107178\\zapracuj_peel\\mapkowanie.csproj",
         "packagesPath": "C:\\Users\\balfouri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balfouri\\Source\\Repos\\pzx107178\\zapracuj_peel\\obj\\",
+        "outputPath": "C:\\Users\\balfouri\\source\\repos\\pzx107178\\zapracuj_peel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

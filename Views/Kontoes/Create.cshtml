@@ -1,64 +1,89 @@
 ﻿@model mapkowanie.Models.Konto
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Stwórz";
 }
 
-<h1>Create</h1>
+<head>
+    <style>
+        body {
+            background-color: rgba(127, 199, 217, 1);
+            background-image: radial-gradient(circle, rgba(127, 199, 217, 1) 0%, rgba(220, 242, 241, 1) 100%);
+            margin: 0;
+            color: #0F1035;
+        }
+        
+    </style>
+</head>
 
-<h4>Konto</h4>
-<hr />
+
+
+<h1>Stwórz swój profil poniżej</h1><br />
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="DateTime" class="control-label"></label>
-                <input asp-for="DateTime" class="form-control" />
-                <span asp-validation-for="DateTime" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
+
+            
+
+
+
+            <div style="display: none;" class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Zablokowane" /> @Html.DisplayNameFor(model => model.Zablokowane)
                 </label>
             </div>
 
             
+
+
+
             <div class="form-group">
-                <label asp-for="WynagrodzenieMinimalne" class="control-label"></label>
+                <label asp-for="WynagrodzenieMinimalne" class="control-label">Jakiego minimalnego wynagrodzenie oczekujesz?</label>
                 <input asp-for="WynagrodzenieMinimalne" class="form-control" />
                 <span asp-validation-for="WynagrodzenieMinimalne" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="GodzinaStart" class="control-label"></label>
+                <label asp-for="GodzinaStart" class="control-label">Preferowany start pracy</label>
                 <input asp-for="GodzinaStart" class="form-control" />
                 <span asp-validation-for="GodzinaStart" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="GodzinaStop" class="control-label"></label>
+                <label asp-for="GodzinaStop" class="control-label">O której godzinie chcesz kończyć pracę</label>
                 <input asp-for="GodzinaStop" class="form-control" />
                 <span asp-validation-for="GodzinaStop" class="text-danger"></span>
+            </div><br /><br />
+
+
+            <div class="form-group">
+                <label asp-for="DateTime" class="control-label">Twoja data urodzenia</label>
+                <input asp-for="DateTime" class="form-control" />
+                <span asp-validation-for="DateTime" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Adres" class="control-label"></label>
+                <label asp-for="Adres" class="control-label">Wpisz swój adres zamieszkania</label>
                 <input asp-for="Adres" class="form-control" />
                 <span asp-validation-for="Adres" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Nip" class="control-label"></label>
+                <label asp-for="Nip" class="control-label">Twój adres NIP</label>
                 <input asp-for="Nip" class="form-control" />
                 <span asp-validation-for="Nip" class="text-danger"></span>
-            </div>
+            </div><br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Stwórz" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
+@* <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
+<!---->
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

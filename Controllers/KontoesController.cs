@@ -30,9 +30,8 @@ namespace mapkowanie.Controllers
         {
             IdentityUser uzytkownik = _userManager.FindByNameAsync(User.Identity.Name).Result;
 
-            return _context.Konto != null ? 
-                          View(await _context.Konto.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Konto'  is null.");
+
+            return View(await _context.Konto.Include(e => e.user).Where(p => p.userId == uzytkownik.Id).ToListAsync());
         }
 
         // GET: Kontoes/Details/5
@@ -56,6 +55,7 @@ namespace mapkowanie.Controllers
         // GET: Kontoes/Create
         public IActionResult Create()
         {
+            IdentityUser uzytkownik = _userManager.FindByNameAsync(User.Identity.Name).Result;
             return View();
         }
 
@@ -81,6 +81,7 @@ namespace mapkowanie.Controllers
         // GET: Kontoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            IdentityUser uzytkownik = _userManager.FindByNameAsync(User.Identity.Name).Result;
             if (id == null || _context.Konto == null)
             {
                 return NotFound();

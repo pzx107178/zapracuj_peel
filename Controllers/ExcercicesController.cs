@@ -48,7 +48,8 @@ namespace mapkowanie.Controllers
             IdentityUser uzytkownik = _userManager.FindByNameAsync(User.Identity.Name).Result;
 
             var applicationDbContext = _context.Excercice.Include(e => e.ExcerciceType).Include(e => e.Session);
-            return View(await applicationDbContext.Include(e => e.user).Where(p => p.userId == uzytkownik.Id).ToListAsync());
+            //return View(await applicationDbContext.Include(e => e.user).Where(p => p.userId == uzytkownik.Id).ToListAsync());
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Excercices/Details/5
