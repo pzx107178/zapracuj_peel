@@ -30,6 +30,7 @@ namespace mapkowanie.Controllers
         {
             IdentityUser uzytkownik = _userManager.FindByNameAsync(User.Identity.Name).Result;
 
+
                 return _context.Oferta != null ? 
                           View(await _context.Oferta.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Oferta'  is null.");

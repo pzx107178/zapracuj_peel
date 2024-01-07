@@ -163,6 +163,21 @@
 
 	<div class="kategorie">Wszystkie oferty</div>
 
+
+	@foreach (var item in Model)
+	{
+		Console.WriteLine(Html.DisplayFor(modelItem => item.widocznosc));
+		string GStart = item.PracaStart.ToString("HH:mm");
+		string GStop = item.PracaStop.ToString("HH:mm");
+
+		<div class="oferta">
+			<div class="opis">@Html.DisplayFor(modelItem => item.Opis)</div>
+			<div class="godziny">@GStart - @GStop</div>
+			<div class="zarobki">@Html.DisplayFor(modelItem => item.WynagrodzenieMin) - @Html.DisplayFor(modelItem => item.WynagrodzenieMax)</div>
+			<a href="mailto:pzx107178@student.poznan.merito.pl"><div class="aplikuj">Aplikuj!</div></a>
+		</div>
+	}
+
 </div>
 
 
